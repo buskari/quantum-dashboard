@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import Sidebar from './components/layout/Sidebar'
+import Header from './components/layout/Header'
 import Home from './pages/Home'
 import TestPage from './pages/TestPage'
 import { LayoutDashboard, Users, User, Settings } from 'lucide-react'
@@ -18,6 +19,11 @@ function AppContent() {
     <div className="flex">
       <Sidebar items={navItems} currentPath={location.pathname} />
       <main className="ml-60 flex-1">
+        <Header 
+          title="Dashboard" 
+          userName="John Doe" 
+          userAvatar="https://i.pravatar.cc/150?img=1" 
+        />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/test" element={<TestPage />} />
