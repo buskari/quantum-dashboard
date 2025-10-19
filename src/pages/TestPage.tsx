@@ -1,4 +1,5 @@
 import Button from '../components/ui/Button';
+import Badge from '../components/ui/Badge';
 import { Plus } from 'lucide-react';
 
 export default function TestPage() {
@@ -23,6 +24,14 @@ export default function TestPage() {
         <Button icon={<Plus />} iconPosition="left">With Icon</Button>
         <Button loading>Loading</Button>
         <Button disabled>Disabled</Button>
+      </div>
+      
+      <div className="space-x-2">
+        <Badge variant="success">Active</Badge>
+        <Badge variant="error">Error</Badge>
+        <Badge variant="warning">Warning</Badge>
+        <Badge variant="info">Info</Badge>
+        <Badge>Default</Badge>
       </div>
     </div>
   );
