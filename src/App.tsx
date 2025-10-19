@@ -1,3 +1,4 @@
+import React from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import Sidebar from './components/layout/Sidebar'
 import Header from './components/layout/Header'
@@ -11,6 +12,7 @@ import { LayoutDashboard, Users, User, Settings } from 'lucide-react'
 
 function AppContent() {
   const location = useLocation()
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false)
   
   const navItems = [
     { id: 'home', label: 'Home', icon: <LayoutDashboard />, path: '/' },
@@ -31,12 +33,18 @@ function AppContent() {
   
   return (
     <div className="flex">
-      <Sidebar items={navItems} currentPath={location.pathname} />
+      <Sidebar 
+        items={navItems} 
+        currentPath={location.pathname}
+        isMobileMenuOpen={isMobileMenuOpen}
+        setIsMobileMenuOpen={setIsMobileMenuOpen}
+      />
       <main className="md:ml-60 flex-1 w-full">
         <Header 
           title={pageTitle} 
           userName="John Doe" 
-          userAvatar="https://i.pravatar.cc/150?img=1" 
+          userAvatar="https://i.pravatar.cc/150?img=1"
+          onMenuClick={() => setIsMobileMenuOpen(true)}
         />
         <Routes>
           <Route path="/" element={<DashboardPage />} />
