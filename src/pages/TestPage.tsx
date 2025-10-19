@@ -5,6 +5,7 @@ import Input from '../components/ui/Input';
 import Avatar from '../components/ui/Avatar';
 import MetricCard from '../components/ui/MetricCard';
 import Table from '../components/ui/Table';
+import LineChart from '../components/charts/LineChart';
 import { Plus, Mail, Lock, Users, DollarSign, ShoppingCart, TrendingUp } from 'lucide-react';
 
 export default function TestPage() {
@@ -31,6 +32,15 @@ export default function TestPage() {
         </Badge>
       )
     },
+  ];
+
+  const chartData = [
+    { name: 'Jan', value: 400 },
+    { name: 'Feb', value: 300 },
+    { name: 'Mar', value: 600 },
+    { name: 'Apr', value: 800 },
+    { name: 'May', value: 500 },
+    { name: 'Jun', value: 700 },
   ];
 
   return (
@@ -153,6 +163,12 @@ export default function TestPage() {
         columns={columns} 
         data={users} 
         onRowClick={(row) => console.log('Clicked:', row)}
+      />
+      
+      <LineChart 
+        data={chartData} 
+        title="Monthly Revenue" 
+        color="#6366f1"
       />
     </div>
   );
