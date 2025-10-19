@@ -1,5 +1,6 @@
 import Button from '../components/ui/Button';
 import Badge from '../components/ui/Badge';
+import Card from '../components/ui/Card';
 import { Plus } from 'lucide-react';
 
 export default function TestPage() {
@@ -32,6 +33,24 @@ export default function TestPage() {
         <Badge variant="warning">Warning</Badge>
         <Badge variant="info">Info</Badge>
         <Badge>Default</Badge>
+      </div>
+      
+      <div className="space-y-4">
+        <Card title="Simple Card">
+          This is a simple card with just a title.
+        </Card>
+        
+        <Card title="Card with Subtitle" subtitle="This is a subtitle">
+          Content goes here.
+        </Card>
+        
+        <Card padding="sm">
+          Small padding card
+        </Card>
+        
+        <Card padding="lg">
+          Large padding card
+        </Card>
       </div>
     </div>
   );
