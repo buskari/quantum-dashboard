@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import Sidebar from './components/layout/Sidebar'
 import Header from './components/layout/Header'
-import Home from './pages/Home'
 import TestPage from './pages/TestPage'
+import DashboardPage from './pages/DashboardPage'
 import { LayoutDashboard, Users, User, Settings } from 'lucide-react'
 
 function AppContent() {
@@ -25,7 +25,7 @@ function AppContent() {
           userAvatar="https://i.pravatar.cc/150?img=1" 
         />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<DashboardPage />} />
           <Route path="/test" element={<TestPage />} />
         </Routes>
       </main>
