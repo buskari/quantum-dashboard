@@ -14,13 +14,46 @@ Whether you're building a startup MVP, internal tools, or a client project, Quan
 
 Experience Quantum Dashboard in action:
 
-**[🚀 VIEW LIVE DEMO](https://your-vercel-url.vercel.app)**
+**[🚀 VIEW LIVE DEMO](quantum-dashboard-lhe8wzfgi-andris-projects-159d5020.vercel.app)**
 
 ---
 
 ## 📸 Preview
 
-![Quantum Dashboard Preview](./docs/dashboard-preview.png)
+### Dashboard Home
+![Dashboard Home - Desktop](./docs/home.png)
+
+<details>
+<summary>📱 View More Screenshots</summary>
+
+### Dashboard Home - Mobile
+![Dashboard Home - Mobile](./docs/home-mobile.png)
+
+### Users Management
+![Users Management](./docs/users.png)
+
+### Users Management - Mobile
+![Users Management - Mobile](./docs/users-mobile.png)
+
+### User Profile
+![User Profile](./docs/profile.png)
+
+### User Profile - Mobile
+![User Profile - Mobile](./docs/profile-mobile.png)
+
+### Settings
+![Settings](./docs/settings.png)
+
+### Settings - Mobile
+![Settings - Mobile](./docs/settings-mobile.png)
+
+### Mobile Navigation
+![Mobile Navigation](./docs/sidebar-mobile.png)
+
+### Login Page
+![Login Page](./docs/login.png)
+
+</details>
 
 ---
 
