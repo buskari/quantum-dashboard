@@ -93,7 +93,7 @@ Get up and running in less than 2 minutes:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/quantum-dashboard.git
+git clone https://github.com/buskari/quantum-dashboard.git
 ```
 
 ### 2. Install dependencies
@@ -221,9 +221,9 @@ You are free to use this template for personal and commercial projects. Attribut
 
 Have questions or found a bug? Here's how to reach us:
 
-- 🐛 **Bug Reports:** [Open an issue on GitHub](https://github.com/your-username/quantum-dashboard/issues)
-- 💡 **Feature Requests:** [Open an issue on GitHub](https://github.com/your-username/quantum-dashboard/issues)
-- 📧 **Email:** your-email@gmail.com (for private inquiries)
+- 🐛 **Bug Reports:** [Open an issue on GitHub](https://github.com/buskari/quantum-dashboard/issues)
+- 💡 **Feature Requests:** [Open an issue on GitHub](https://github.com/buskari/quantum-dashboard/issues)
+- 📧 **Email:** andrisbuscariolli88@gmail.com (for private inquiries)
 
 We typically respond within 24-48 hours.
 
@@ -233,15 +233,15 @@ We typically respond within 24-48 hours.
 
 If you find this project useful, please consider giving it a star on GitHub! It helps us reach more developers and keeps us motivated to maintain and improve the template.
 
-**[⭐ Star on GitHub](https://github.com/your-username/quantum-dashboard)**
+**[⭐ Star on GitHub](https://github.com/buskari/quantum-dashboard)**
 
 ---
 
 <div align="center">
   <p>Made with ❤️ by developers, for developers</p>
   <p>
-    <a href="https://your-vercel-url.vercel.app">Live Demo</a> •
-    <a href="https://github.com/your-username/quantum-dashboard">GitHub</a> •
+    <a href="https://quantum-dashboard-lhe8wzfgi-andris-projects-159d5020.vercel.app">Live Demo</a> •
+    <a href="https://github.com/buskari/quantum-dashboarbd">GitHub</a> •
     <a href="https://gumroad.com/l/quantum-dashboard">Download & PRO Waitlist</a>
   </p>
 </div>
