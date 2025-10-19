@@ -3,7 +3,8 @@ import Badge from '../components/ui/Badge';
 import Card from '../components/ui/Card';
 import Input from '../components/ui/Input';
 import Avatar from '../components/ui/Avatar';
-import { Plus, Mail, Lock } from 'lucide-react';
+import MetricCard from '../components/ui/MetricCard';
+import { Plus, Mail, Lock, Users, DollarSign, ShoppingCart, TrendingUp } from 'lucide-react';
 
 export default function TestPage() {
   return (
@@ -86,6 +87,40 @@ export default function TestPage() {
         <Avatar src="https://i.pravatar.cc/150?img=3" alt="User 3" size="lg" />
         <Avatar src="https://i.pravatar.cc/150?img=4" alt="User 4" size="xl" />
         <Avatar fallback="JD" size="lg" />
+      </div>
+      
+      <div className="grid grid-cols-4 gap-4">
+        <MetricCard 
+          title="Total Users" 
+          value="2,543" 
+          change={12.5} 
+          trend="up"
+          icon={<Users size={24} />}
+        />
+        
+        <MetricCard 
+          title="Revenue" 
+          value="$45,231" 
+          change={8.2} 
+          trend="up"
+          icon={<DollarSign size={24} />}
+        />
+        
+        <MetricCard 
+          title="Orders" 
+          value="1,234" 
+          change={-3.1} 
+          trend="down"
+          icon={<ShoppingCart size={24} />}
+        />
+        
+        <MetricCard 
+          title="Growth" 
+          value="23.5%" 
+          change={5.4} 
+          trend="up"
+          icon={<TrendingUp size={24} />}
+        />
       </div>
     </div>
   );
