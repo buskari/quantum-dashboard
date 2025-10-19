@@ -2,7 +2,6 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import Sidebar from './components/layout/Sidebar'
 import Header from './components/layout/Header'
-import TestPage from './pages/TestPage'
 import DashboardPage from './pages/DashboardPage'
 import UserListPage from './pages/UserListPage'
 import UserProfilePage from './pages/UserProfilePage'
@@ -23,7 +22,6 @@ function AppContent() {
   
   const pageTitles: { [key: string]: string } = {
     '/': 'Home',
-    '/test': 'Test Page',
     '/users': 'Users',
     '/profile': 'Profile',
     '/settings': 'Settings',
@@ -48,7 +46,6 @@ function AppContent() {
         />
         <Routes>
           <Route path="/" element={<DashboardPage />} />
-          <Route path="/test" element={<TestPage />} />
           <Route path="/users" element={<UserListPage />} />
           <Route path="/profile" element={<UserProfilePage />} />
           <Route path="/settings" element={<SettingsPage />} />
