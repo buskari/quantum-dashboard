@@ -1,7 +1,8 @@
 import Button from '../components/ui/Button';
 import Badge from '../components/ui/Badge';
 import Card from '../components/ui/Card';
-import { Plus } from 'lucide-react';
+import Input from '../components/ui/Input';
+import { Plus, Mail, Lock } from 'lucide-react';
 
 export default function TestPage() {
   return (
@@ -51,6 +52,31 @@ export default function TestPage() {
         <Card padding="lg">
           Large padding card
         </Card>
+      </div>
+      
+      <div className="space-y-4 max-w-md">
+        <Input label="Email" type="email" placeholder="john@example.com" />
+        
+        <Input 
+          label="Password" 
+          type="password" 
+          placeholder="••••••••" 
+          helperText="Must be at least 8 characters"
+        />
+        
+        <Input 
+          label="Email with Icon" 
+          type="email" 
+          icon={<Mail size={18} />}
+          placeholder="john@example.com"
+        />
+        
+        <Input 
+          label="Error Example" 
+          type="text" 
+          error="This field is required"
+          placeholder="Enter something"
+        />
       </div>
     </div>
   );
