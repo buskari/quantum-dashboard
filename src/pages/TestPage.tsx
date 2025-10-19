@@ -2,6 +2,7 @@ import Button from '../components/ui/Button';
 import Badge from '../components/ui/Badge';
 import Card from '../components/ui/Card';
 import Input from '../components/ui/Input';
+import Avatar from '../components/ui/Avatar';
 import { Plus, Mail, Lock } from 'lucide-react';
 
 export default function TestPage() {
@@ -77,6 +78,14 @@ export default function TestPage() {
           error="This field is required"
           placeholder="Enter something"
         />
+      </div>
+      
+      <div className="flex items-center gap-4">
+        <Avatar src="https://i.pravatar.cc/150?img=1" alt="User 1" size="sm" />
+        <Avatar src="https://i.pravatar.cc/150?img=2" alt="User 2" size="md" />
+        <Avatar src="https://i.pravatar.cc/150?img=3" alt="User 3" size="lg" />
+        <Avatar src="https://i.pravatar.cc/150?img=4" alt="User 4" size="xl" />
+        <Avatar fallback="JD" size="lg" />
       </div>
     </div>
   );
