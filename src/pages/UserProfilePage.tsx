@@ -6,8 +6,8 @@ import Button from '../components/ui/Button'
 
 export default function UserProfilePage() {
   return (
-    <div className="p-6">
-      <div className="grid grid-cols-2 gap-6">
+    <div className="p-4 md:p-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <Card title="Profile Information">
           <div className="flex flex-col items-center text-center">
             <Avatar 

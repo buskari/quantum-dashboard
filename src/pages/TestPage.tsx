@@ -44,29 +44,29 @@ export default function TestPage() {
   ];
 
   return (
-    <div className="p-8 space-y-4">
-      <h1 className="text-2xl font-bold">Button Test</h1>
+    <div className="p-4 md:p-8 space-y-4">
+      <h1 className="text-xl md:text-2xl font-bold">Button Test</h1>
       
-      <div className="space-x-2">
+      <div className="flex flex-wrap gap-2">
         <Button variant="primary">Primary</Button>
         <Button variant="secondary">Secondary</Button>
         <Button variant="outline">Outline</Button>
         <Button variant="ghost">Ghost</Button>
       </div>
       
-      <div className="space-x-2">
+      <div className="flex flex-wrap gap-2">
         <Button size="sm">Small</Button>
         <Button size="md">Medium</Button>
         <Button size="lg">Large</Button>
       </div>
       
-      <div className="space-x-2">
+      <div className="flex flex-wrap gap-2">
         <Button icon={<Plus />} iconPosition="left">With Icon</Button>
         <Button loading>Loading</Button>
         <Button disabled>Disabled</Button>
       </div>
       
-      <div className="space-x-2">
+      <div className="flex flex-wrap gap-2">
         <Badge variant="success">Active</Badge>
         <Badge variant="error">Error</Badge>
         <Badge variant="warning">Warning</Badge>
@@ -117,7 +117,7 @@ export default function TestPage() {
         />
       </div>
       
-      <div className="flex items-center gap-4">
+      <div className="flex flex-wrap items-center gap-4">
         <Avatar src="https://i.pravatar.cc/150?img=1" alt="User 1" size="sm" />
         <Avatar src="https://i.pravatar.cc/150?img=2" alt="User 2" size="md" />
         <Avatar src="https://i.pravatar.cc/150?img=3" alt="User 3" size="lg" />
@@ -125,7 +125,7 @@ export default function TestPage() {
         <Avatar fallback="JD" size="lg" />
       </div>
       
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <MetricCard 
           title="Total Users" 
           value="2,543" 

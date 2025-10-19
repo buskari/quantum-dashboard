@@ -14,14 +14,14 @@ function MetricCard({ title, value, change, icon, trend }: MetricCardProps) {
   const ChangeIcon = trend === 'up' ? ArrowUp : trend === 'down' ? ArrowDown : null
   
   return (
-    <div className="bg-white rounded-lg border border-gray-200 p-6 relative">
+    <div className="bg-white rounded-lg border border-gray-200 p-4 md:p-6 relative">
       {icon && (
-        <div className="absolute top-6 right-6 text-gray-400">
+        <div className="absolute top-4 right-4 md:top-6 md:right-6 text-gray-400">
           {icon}
         </div>
       )}
-      <p className="text-sm font-medium text-gray-600">{title}</p>
-      <p className="text-3xl font-bold text-gray-900 mt-2">{value}</p>
+      <p className="text-xs md:text-sm font-medium text-gray-600">{title}</p>
+      <p className="text-2xl md:text-3xl font-bold text-gray-900 mt-2">{value}</p>
       {change !== undefined && (
         <div className={`flex items-center gap-1 mt-2 ${changeColor}`}>
           {ChangeIcon && <ChangeIcon size={16} />}

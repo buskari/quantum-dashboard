@@ -46,7 +46,7 @@ function Sidebar({ items = defaultItems, currentPath }: SidebarProps) {
   const activePath = currentPath || location.pathname
   
   return (
-    <aside className="fixed left-0 top-0 h-screen w-60 bg-gray-800 text-white">
+    <aside className="hidden md:block fixed left-0 top-0 h-screen w-60 bg-gray-800 text-white">
       <div className="p-6 border-b border-gray-700">
         <h1 className="text-xl font-bold">SaaS Dashboard</h1>
       </div>

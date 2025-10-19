@@ -30,7 +30,7 @@ function AppContent() {
   return (
     <div className="flex">
       <Sidebar items={navItems} currentPath={location.pathname} />
-      <main className="ml-60 flex-1">
+      <main className="md:ml-60 flex-1 w-full">
         <Header 
           title={pageTitle} 
           userName="John Doe" 

@@ -21,7 +21,7 @@ function Table({ columns, data, onRowClick }: TableProps) {
             {columns.map((column) => (
               <th
                 key={column.key}
-                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase"
+                className="px-3 md:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase"
               >
                 {column.label}
               </th>
@@ -36,7 +36,7 @@ function Table({ columns, data, onRowClick }: TableProps) {
               onClick={() => onRowClick?.(row)}
             >
               {columns.map((column) => (
-                <td key={column.key} className="px-6 py-4 text-sm text-gray-900">
+                <td key={column.key} className="px-3 md:px-6 py-4 text-sm text-gray-900">
                   {column.render ? column.render(row[column.key], row) : row[column.key]}
                 </td>
               ))}

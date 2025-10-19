@@ -45,9 +45,9 @@ export default function UserListPage() {
   ];
 
   return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold text-gray-900 mb-2">User Management</h1>
-      <p className="text-gray-600 mb-6">Manage and view all users</p>
+    <div className="p-4 md:p-6">
+      <h1 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">User Management</h1>
+      <p className="text-sm md:text-base text-gray-600 mb-4 md:mb-6">Manage and view all users</p>
       
       <Card>
         <Table 
