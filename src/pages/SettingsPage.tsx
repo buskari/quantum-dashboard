@@ -1,6 +1,7 @@
 import Card from '../components/ui/Card'
 import Input from '../components/ui/Input'
 import Button from '../components/ui/Button'
+import Checkbox from '../components/ui/Checkbox'
 
 export default function SettingsPage() {
   return (
@@ -40,49 +41,25 @@ export default function SettingsPage() {
         <Card title="Notification Preferences" subtitle="Choose what notifications you want to receive">
           <div className="space-y-4">
             <div className="space-y-3">
-              <div className="flex items-start gap-3">
-                <input 
-                  type="checkbox" 
-                  id="email-notifications"
-                  className="mt-1 w-4 h-4 text-primary-500 border-gray-300 rounded focus:ring-primary-500"
-                  defaultChecked
-                />
-                <div>
-                  <label htmlFor="email-notifications" className="text-sm font-medium text-gray-900 cursor-pointer">
-                    Email notifications for new messages
-                  </label>
-                  <p className="text-xs text-gray-500">Receive email when you get a new message</p>
-                </div>
-              </div>
+              <Checkbox 
+                id="email-notifications"
+                label="Email notifications for new messages"
+                description="Receive email when you get a new message"
+                defaultChecked
+              />
               
-              <div className="flex items-start gap-3">
-                <input 
-                  type="checkbox" 
-                  id="push-notifications"
-                  className="mt-1 w-4 h-4 text-primary-500 border-gray-300 rounded focus:ring-primary-500"
-                  defaultChecked
-                />
-                <div>
-                  <label htmlFor="push-notifications" className="text-sm font-medium text-gray-900 cursor-pointer">
-                    Push notifications for updates
-                  </label>
-                  <p className="text-xs text-gray-500">Get push notifications for important updates</p>
-                </div>
-              </div>
+              <Checkbox 
+                id="push-notifications"
+                label="Push notifications for updates"
+                description="Get push notifications for important updates"
+                defaultChecked
+              />
               
-              <div className="flex items-start gap-3">
-                <input 
-                  type="checkbox" 
-                  id="weekly-summary"
-                  className="mt-1 w-4 h-4 text-primary-500 border-gray-300 rounded focus:ring-primary-500"
-                />
-                <div>
-                  <label htmlFor="weekly-summary" className="text-sm font-medium text-gray-900 cursor-pointer">
-                    Weekly summary emails
-                  </label>
-                  <p className="text-xs text-gray-500">Receive a weekly summary of your activity</p>
-                </div>
-              </div>
+              <Checkbox 
+                id="weekly-summary"
+                label="Weekly summary emails"
+                description="Receive a weekly summary of your activity"
+              />
             </div>
             
             <Button variant="primary">
