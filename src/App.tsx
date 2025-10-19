@@ -4,6 +4,7 @@ import Header from './components/layout/Header'
 import TestPage from './pages/TestPage'
 import DashboardPage from './pages/DashboardPage'
 import UserListPage from './pages/UserListPage'
+import UserProfilePage from './pages/UserProfilePage'
 import { LayoutDashboard, Users, User, Settings } from 'lucide-react'
 
 function AppContent() {
@@ -39,6 +40,7 @@ function AppContent() {
           <Route path="/" element={<DashboardPage />} />
           <Route path="/test" element={<TestPage />} />
           <Route path="/users" element={<UserListPage />} />
+          <Route path="/profile" element={<UserProfilePage />} />
         </Routes>
       </main>
     </div>
