@@ -3,6 +3,7 @@ import Sidebar from './components/layout/Sidebar'
 import Header from './components/layout/Header'
 import TestPage from './pages/TestPage'
 import DashboardPage from './pages/DashboardPage'
+import UserListPage from './pages/UserListPage'
 import { LayoutDashboard, Users, User, Settings } from 'lucide-react'
 
 function AppContent() {
@@ -15,18 +16,29 @@ function AppContent() {
     { id: 'settings', label: 'Settings', icon: <Settings />, path: '/settings' },
   ]
   
+  const pageTitles: { [key: string]: string } = {
+    '/': 'Home',
+    '/test': 'Test Page',
+    '/users': 'Users',
+    '/profile': 'Profile',
+    '/settings': 'Settings',
+  }
+  
+  const pageTitle = pageTitles[location.pathname] || 'Dashboard'
+  
   return (
     <div className="flex">
       <Sidebar items={navItems} currentPath={location.pathname} />
       <main className="ml-60 flex-1">
         <Header 
-          title="Dashboard" 
+          title={pageTitle} 
           userName="John Doe" 
           userAvatar="https://i.pravatar.cc/150?img=1" 
         />
         <Routes>
           <Route path="/" element={<DashboardPage />} />
           <Route path="/test" element={<TestPage />} />
+          <Route path="/users" element={<UserListPage />} />
         </Routes>
       </main>
     </div>
