@@ -4,9 +4,35 @@ import Card from '../components/ui/Card';
 import Input from '../components/ui/Input';
 import Avatar from '../components/ui/Avatar';
 import MetricCard from '../components/ui/MetricCard';
+import Table from '../components/ui/Table';
 import { Plus, Mail, Lock, Users, DollarSign, ShoppingCart, TrendingUp } from 'lucide-react';
 
 export default function TestPage() {
+  const users = [
+    { id: 1, name: 'John Doe', email: 'john@example.com', status: 'active', avatar: 'https://i.pravatar.cc/150?img=1' },
+    { id: 2, name: 'Jane Smith', email: 'jane@example.com', status: 'inactive', avatar: 'https://i.pravatar.cc/150?img=2' },
+    { id: 3, name: 'Bob Johnson', email: 'bob@example.com', status: 'active', avatar: 'https://i.pravatar.cc/150?img=3' },
+  ];
+
+  const columns = [
+    {
+      key: 'avatar',
+      label: 'Avatar',
+      render: (value: string) => <Avatar src={value} size="sm" />
+    },
+    { key: 'name', label: 'Name' },
+    { key: 'email', label: 'Email' },
+    {
+      key: 'status',
+      label: 'Status',
+      render: (value: string) => (
+        <Badge variant={value === 'active' ? 'success' : 'default'}>
+          {value}
+        </Badge>
+      )
+    },
+  ];
+
   return (
     <div className="p-8 space-y-4">
       <h1 className="text-2xl font-bold">Button Test</h1>
@@ -122,6 +148,12 @@ export default function TestPage() {
           icon={<TrendingUp size={24} />}
         />
       </div>
+      
+      <Table 
+        columns={columns} 
+        data={users} 
+        onRowClick={(row) => console.log('Clicked:', row)}
+      />
     </div>
   );
 }
