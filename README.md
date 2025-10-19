@@ -14,7 +14,7 @@ Whether you're building a startup MVP, internal tools, or a client project, Quan
 
 Experience Quantum Dashboard in action:
 
-**[🚀 VIEW LIVE DEMO](quantum-dashboard-lhe8wzfgi-andris-projects-159d5020.vercel.app)**
+**[🚀 VIEW LIVE DEMO](https://quantum-dashboard-lhe8wzfgi-andris-projects-159d5020.vercel.app)**
 
 ---
 
