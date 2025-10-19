@@ -6,6 +6,7 @@ import DashboardPage from './pages/DashboardPage'
 import UserListPage from './pages/UserListPage'
 import UserProfilePage from './pages/UserProfilePage'
 import LoginPage from './pages/LoginPage'
+import SettingsPage from './pages/SettingsPage'
 import { LayoutDashboard, Users, User, Settings } from 'lucide-react'
 
 function AppContent() {
@@ -42,6 +43,7 @@ function AppContent() {
           <Route path="/test" element={<TestPage />} />
           <Route path="/users" element={<UserListPage />} />
           <Route path="/profile" element={<UserProfilePage />} />
+          <Route path="/settings" element={<SettingsPage />} />
         </Routes>
       </main>
     </div>
