@@ -193,7 +193,7 @@ While this free version is perfect for getting started, we're working on an **en
 
 Be among the first to know when the PRO version launches and get an exclusive discount!
 
-**[✨ Join the Waitlist - Download FREE Version & Get Early Access](https://gumroad.com/l/quantum-dashboard)**
+**[✨ Join the Waitlist - Download FREE Version & Get Early Access](https://buskari.gumroad.com/l/quantum-dashboard)**
 
 ---
 
@@ -242,6 +242,6 @@ If you find this project useful, please consider giving it a star on GitHub! It 
   <p>
     <a href="https://quantum-dashboard-lhe8wzfgi-andris-projects-159d5020.vercel.app">Live Demo</a> •
     <a href="https://github.com/buskari/quantum-dashboarbd">GitHub</a> •
-    <a href="https://gumroad.com/l/quantum-dashboard">Download & PRO Waitlist</a>
+    <a href="https://buskari.gumroad.com/l/quantum-dashboard">Download & PRO Waitlist</a>
   </p>
 </div>
